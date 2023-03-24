@@ -1,8 +1,9 @@
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import {FaCookie,FaBullseye,FaComments,FaFeather,FaDragon} from 'react-icons/fa'
 
 
 type props ={
-    icon:string
+    icon: any
+    text?: string
 }
 
 export const Sidebar = () =>{
@@ -11,19 +12,25 @@ export const Sidebar = () =>{
                         flex flex-col
                         bg-primary text-secondary shadow-lg">
 
-            <i>A</i>
-            <i>B</i>
-            <i>C</i> 
-            <i>D</i>
-            <i>E</i>
+            <SideBarIcon text='Trabalhos' icon={<FaDragon size='28'/>}/>
+            <SideBarIcon text='Bate-papo' icon={<FaComments size='28'/>}/>
+            <SideBarIcon text='Sobre' icon={<FaFeather size='28'/>}/>
+            <SideBarIcon text='Game' icon={<FaBullseye size='28'/>}/>
+            <SideBarIcon text='biscoito' icon={<FaCookie size='28'/>}/>
              
         </div>
     )
 }
 
 
-const SideBarIcon = ({icon}:props) =>{
-    <div className="sidebar-icon">
+const SideBarIcon = ({icon, text='tooltip'}:props) =>{
+    return(
+    <div className="sidebar-icon group">
         {icon}
+
+        <span className='sidebar-tooltip group-hover:scale-100'>
+            {text}
+        </span>
     </div>
+    )
 }
