@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    background-color: #ccc;
     height: 100vh;
     flex-direction: column;
+      
 `;
 
 export const Menu = styled.div`
     display: flex;
-    background-color: blue;
+    background-color: #1c93bf;
     height: 80px;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,6 @@ export const Menu = styled.div`
 
 export const PageBody = styled.div`
     display: flex;
-    background-color: aqua;
+    background-color: #ccc;
     flex: 1;
 `;
