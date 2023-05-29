@@ -16,7 +16,7 @@ const Header = () =>{
 
     return(
         <HeaderArea>
-            <div className="container">
+            <div className="container"> 
                 <div className="logo">
                     <Link to='/'>
                         <img src="./assets/kikiLogo.png" />

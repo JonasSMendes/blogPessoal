@@ -25,6 +25,13 @@ export default () => {
                         <Route exact path="/">
                             <HomeScreen />
                         </Route>
+                        <Route axact path="/sobre">
+                            tela de sobre
+                        </Route>
+                        <Route axact path="/projetos">
+                            tela de projetos
+                        </Route>
+
                         <Route path="/tela2/:nome">
                             <Tela2Screen />
                         </Route>
