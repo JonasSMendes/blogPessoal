@@ -4,7 +4,7 @@ import {Container} from './styled'
 export  default () =>{
     return(
         <Container>
-            ....daçlldãlds
+            ....tela inicial
         </Container>
     )
 }

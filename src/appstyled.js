@@ -4,6 +4,11 @@ export const Container = styled.div`
     display: flex;
     height: 100vh;
     flex-direction: column; 
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom  center;
+    background-color: #1c1d4d;
     
 `;
 
@@ -15,10 +20,7 @@ export const Menu = styled.div`
 `;
 
 export const PageBody = styled.div`
-    background-image: url('/assets/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom  center;
+   
     display: flex;
     flex: 1;
 `;

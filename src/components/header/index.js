@@ -32,6 +32,11 @@ const Header = () =>{
                         </ul>
                     </nav>
                 </div>
+                <div className="icon-redes">
+                   <a href='https://github.com/JonasSMendes' > <img src='/assets/github.png'/> </a>
+                   <a href='https://www.linkedin.com/in/jonas-mendes-98a406226/' > <img src='/assets/linkedin.png'/> </a>
+                   <a href='https://wa.me/5581983920205' > <img src='/assets/whatsapp.png'/> </a>
+                </div>
             </div>
         </HeaderArea>
     )

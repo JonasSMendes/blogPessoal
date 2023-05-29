@@ -5,8 +5,9 @@ export const HeaderArea = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #35204b;
     width: 100vw;
+    border-bottom: 2px solid #281c44;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
 
     @media( max-width:820px) {
@@ -35,7 +36,7 @@ export const HeaderArea = styled.div`
         }
 
         nav{
-            width: 700px;
+            width: 800px;
             
             
             ul{
@@ -43,6 +44,7 @@ export const HeaderArea = styled.div`
                 align-items: center;
                 justify-content: center;
                 height: 80px;
+                margin-right: 40px;
 
                
             }
@@ -54,7 +56,6 @@ export const HeaderArea = styled.div`
                     color: #ccc;
                     font-size: 20px;
                     font-family: Arial, Helvetica, sans-serif;
-
                     transition: all 0.5s ease-out;
 
                     &:hover{
@@ -67,6 +68,16 @@ export const HeaderArea = styled.div`
             ul a{
                 text-decoration: none;
 
+            }
+        }
+
+        .icon-redes{
+
+            img{
+                width: 30px;
+                margin-left: 10px;
+                border-radius: 25px;
+   
             }
         }
     }
