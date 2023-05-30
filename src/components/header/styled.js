@@ -7,7 +7,7 @@ export const HeaderArea = styled.div`
     align-items: center;
     width: 100vw;
     border-bottom: 2px solid #281c44;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 
     @media( max-width:820px) {
@@ -37,12 +37,13 @@ export const HeaderArea = styled.div`
 
         nav{
             width: 800px;
+
             
             
             ul{
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: end;
                 height: 80px;
                 margin-right: 40px;
 
@@ -53,14 +54,15 @@ export const HeaderArea = styled.div`
                     align-items: center;
                     justify-content: space-around;
                     margin-left: 50px;
-                    color: #ccc;
+                    color: #999;
                     font-size: 20px;
                     font-family: Arial, Helvetica, sans-serif;
-                    transition: all 0.5s ease-out;
+                    transition: all 0.1s ease-out;
+                    border-bottom: none;
 
                     &:hover{
-                        color: white;
-                        border-bottom: 2px solid #D4ADFC;
+                        color: #000;
+                        border-bottom: 2px solid #5be4a9;
 
                     }
             }
@@ -71,14 +73,6 @@ export const HeaderArea = styled.div`
             }
         }
 
-        .icon-redes{
-
-            img{
-                width: 30px;
-                margin-left: 10px;
-                border-radius: 25px;
-   
-            }
-        }
+        
     }
 `;

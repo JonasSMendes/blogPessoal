@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { useSelector } from 'react-redux';
 
-import { Container, Menu, PageBody } from './appstyled';
+import { Container, Menu, PageBody,Footer } from './appstyled';
 
 import Header from './components/header';
 
@@ -36,8 +36,11 @@ export default () => {
                             <Tela2Screen />
                         </Route>
                     </Switch>
-                </PageBody>
+                </PageBody>  
             </Container>
+            <Footer>
+                
+            </Footer>
         </BrowserRouter>
     );
 }
