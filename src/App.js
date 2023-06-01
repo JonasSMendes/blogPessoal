@@ -8,6 +8,7 @@ import Header from './components/header';
 
 import HomeScreen from './pages/HomeScreen';
 import Tela2Screen from './pages/Tela2Screen';
+import MainSobre from './pages/MainSobre';
 
 
 export default () => {
@@ -26,7 +27,7 @@ export default () => {
                             <HomeScreen />
                         </Route>
                         <Route axact path="/sobre">
-                            tela de sobre
+                            <MainSobre />
                         </Route>
                         <Route axact path="/projetos">
                             tela de projetos

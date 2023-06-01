@@ -13,12 +13,13 @@ export const Menu = styled.div`
     height: 80px;
     justify-content: center;
     align-items: center;
-    background-color: #d5f7e6;
+    background-color: #2e2e39;
 `;
 
 export const PageBody = styled.div`
-   
+    background: linear-gradient(0deg, rgba(57,57,57,1) 16%, rgba(228,174,22,0.06486344537815125) 78%);
     display: flex;
+
     flex: 1;
 `;
 
@@ -27,6 +28,6 @@ export const Footer = styled.div`
     height: 400px;
     background-image: url('/assets/studio-footer.jpg');
     background-size: cover;
-    background-position: bottom left;
+    background-position: center;
 
 `;

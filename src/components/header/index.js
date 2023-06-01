@@ -8,11 +8,6 @@ const Header = () =>{
 
     let location = useLocation()
 
-    
-
-    const handleClick = (e) =>{
-        
-    }
 
     return(
         <HeaderArea>

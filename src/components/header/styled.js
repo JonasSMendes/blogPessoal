@@ -18,7 +18,8 @@ export const HeaderArea = styled.div`
         height: 80px;
         display: flex;
         align-items: center;
-        width: 1000px;  
+        width: 1000px; 
+        
 
         .logo{
             flex: 1;
@@ -58,11 +59,11 @@ export const HeaderArea = styled.div`
                     font-size: 20px;
                     font-family: Arial, Helvetica, sans-serif;
                     transition: all 0.1s ease-out;
-                    border-bottom: none;
+                    
 
                     &:hover{
-                        color: #000;
-                        border-bottom: 2px solid #5be4a9;
+                        color: white;
+                        border-bottom: 2px solid #fff;
 
                     }
             }

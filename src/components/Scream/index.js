@@ -25,16 +25,17 @@ export  default () =>{
             <div className="main-home">
             <div className="text-profile">
                 <div className="texte-home">
-                <h1 ref={titulo} >oi eu sou JonasSmendes:) desenvolvedor Frontend...</h1>
+                <h1 ref={titulo} >oi,eu sou JonasSmendes desenvolvedor Frontend</h1>
                 </div>
                 <div className="icon-redes">
                    <a href='https://github.com/JonasSMendes' > <img src='/assets/github.png'/> </a>
                    <a href='https://www.linkedin.com/in/jonas-mendes-98a406226/' > <img src='/assets/linkedin.png'/> </a>
                    <a href='https://wa.me/5581983920205' > <img src='/assets/whatsapp.png'/> </a>
                 </div>
+                <span>vamos trabalhar juntos</span>
             </div>
             <div className="logo-home">
-                <img src="/assets/painel-home.jpg" />
+                <img src="/assets/logo-Home.webp" />
             </div>
             </div>
         </Container>
