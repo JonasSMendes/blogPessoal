@@ -7,12 +7,13 @@ import { Container, Menu, PageBody,Footer } from './appstyled';
 import Header from './components/header';
 
 import HomeScreen from './pages/HomeScreen';
-import Tela2Screen from './pages/Tela2Screen';
 import MainSobre from './pages/MainSobre';
+import TelaProjetos from './pages/TelaProjetos'
 
 
 export default () => {
 
+ 
     const name = useSelector(state => state.user.name);
 
     return (
@@ -22,26 +23,17 @@ export default () => {
                     <Header/>
                 </Menu>
                 <PageBody>
-                    <Switch>
-                        <Route exact path="/">
-                            <HomeScreen />
-                        </Route>
-                        <Route axact path="/sobre">
-                            <MainSobre />
-                        </Route>
-                        <Route axact path="/projetos">
-                            tela de projetos
-                        </Route>
 
-                        <Route path="/tela2/:nome">
-                            <Tela2Screen />
-                        </Route>
-                    </Switch>
-                </PageBody>  
-            </Container>
-            <Footer>
+                            <HomeScreen/>
+                            <MainSobre />                       
+                            <TelaProjetos/> 
+                                 
+                </PageBody> 
+
                 
-            </Footer>
+            </Container>
+            
+            
         </BrowserRouter>
     );
 }

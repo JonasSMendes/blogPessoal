@@ -9,7 +9,7 @@ export default () => {
 
     return (
         <Container>
-            <Scream/>
+            <Scream id='home'/>
         </Container>
     );
 }

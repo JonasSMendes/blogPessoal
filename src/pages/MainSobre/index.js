@@ -1,15 +1,13 @@
-import React,{useRef} from "react";
+import React from "react";
 import {Container, Body} from './styled'
 import {DiJavascript1, DiHtml5, DiCss3, DiReact, DiPhp, DiJava} from 'react-icons/di'
 
 
 export default () =>{
 
-    let js = useRef();
-    let html = useRef();
 
     return(
-        <Body>
+        <Body id="sobre">
         <Container>
             <div className="card">
                 <span><DiJavascript1/></span>
