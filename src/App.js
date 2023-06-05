@@ -1,10 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { useSelector } from 'react-redux';
+import React, { useRef } from 'react';
+import { BrowserRouter } from "react-router-dom";
 
-import { Container, Menu, PageBody,Footer } from './appstyled';
+import { Container, Menu, PageBody,Footer,HeaderArea } from './appstyled';
 
-import Header from './components/header';
 
 import HomeScreen from './pages/HomeScreen';
 import MainSobre from './pages/MainSobre';
@@ -13,27 +11,50 @@ import TelaProjetos from './pages/TelaProjetos'
 
 export default () => {
 
- 
-    const name = useSelector(state => state.user.name);
+    let ref = useRef(null);
+
+    const HomeClick = () =>{
+        ref.current.scrollIntoView({behavior:'smooth'});
+    }
+
+    const SobreClick = () =>{
+        ref.current.scrollIntoView({behavior:'smooth'})
+    }
+
 
     return (
         <BrowserRouter>
             <Container>
                 <Menu>
-                    <Header/>
+                <HeaderArea>
+
+                <div className="container">
+
+                <div className="logo">
+                    <img src="./assets/kikiLogo.png" />
+                </div>
+
+                <div>
+                    <nav>
+                        <ul>
+                           <li onClick={HomeClick}> Home </li> 
+                           <li onClick={SobreClick}> Sobre </li>
+                           <li> Projetos </li>
+                        </ul>
+                    </nav>
+                </div>
+               
+                </div>
+                </HeaderArea>
                 </Menu>
                 <PageBody>
-
-                            <HomeScreen/>
-                            <MainSobre />                       
-                            <TelaProjetos/> 
-                                 
+                            <HomeScreen ref={ref} />
+                            <MainSobre ref={ref} />                       
+                            <TelaProjetos />        
                 </PageBody> 
-
-                
+    
             </Container>
-            
-            
+                
         </BrowserRouter>
     );
 }

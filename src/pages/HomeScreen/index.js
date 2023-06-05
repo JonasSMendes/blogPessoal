@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { useHistory } from "react-router-dom";
 import { Container } from './styled';
 
 import Scream from '../../components/Scream';
 
-export default () => {
+function HomeScreen (ref) {
     const history = useHistory();
 
     return (
-        <Container>
+        <Container ref={ref}>
             <Scream id='home'/>
         </Container>
     );
 }
+
+export default forwardRef(HomeScreen);

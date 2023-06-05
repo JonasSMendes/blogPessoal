@@ -1,20 +1,20 @@
 import React from "react";
 import {Container, Body} from './styled'
 import {DiJavascript1, DiHtml5, DiCss3, DiReact, DiPhp, DiJava} from 'react-icons/di'
+import { forwardRef } from "react";
 
 
-export default () =>{
-
+function MainSobre () {
 
     return(
-        <Body id="sobre">
+        <Body >
         <Container>
             <div className="card">
                 <span><DiJavascript1/></span>
                 <div className="content">
                     <h3>Java.S</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu elit leo. Suspendisse lacinia
-                         nunc sed ullamcorper consequat. Duis luctus diam in tortor vulputate ullamcorper.</p>
+                    <p>8 meses em Java Script foco em react.js, conhecendo bibliotecas como <b> Manipulação de DOM </b>
+                     aplicado e aperfeiçoando com projetos, <b>Tratamento de dados</b> com criação de tabelas animadas,<b>Funções de Matemática e String</b> </p>
                     <a href="https://github.com/JonasSMendes/j.s" >mais informaçoes</a>  
                 </div>
             </div>
@@ -23,8 +23,7 @@ export default () =>{
                 <span><DiHtml5/></span>
                 <div className="content"> 
                     <h3>Html</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu elit leo. Suspendisse lacinia
-                         nunc sed ullamcorper consequat. Duis luctus diam in tortor vulputate ullamcorper.</p>
+                    <p>estrutura de html, criação de elementos com React, construção de paginas, focadas nas medidas de busca. </p>
                     <a href="https://github.com/JonasSMendes/Htmlcsspage" >mais informaçoes</a>  
                 </div>
             </div>
@@ -33,8 +32,7 @@ export default () =>{
                 <span><DiCss3/></span>
                 <div className="content">
                     <h3>Css</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu elit leo. Suspendisse lacinia
-                         nunc sed ullamcorper consequat. Duis luctus diam in tortor vulputate ullamcorper.</p>
+                    <p>conhecimento em css, com animação e estrutura responsiva para mobile, e aplicando em components em React.js</p>
                     <a href="https://github.com/JonasSMendes/Htmlcsspage" >mais informaçoes</a>  
                 </div>
             </div>
@@ -43,8 +41,7 @@ export default () =>{
                 <span><DiReact/></span>
                 <div className="content">
                     <h3> React </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu elit leo. Suspendisse lacinia
-                         nunc sed ullamcorper consequat. Duis luctus diam in tortor vulputate ullamcorper.</p>
+                    <p>React.js usando bibliotecas como <b>react-Router</b>,<b>react-styled</b>, <b>react-icon</b>, conhecimento tambem em paginas unicas <b>react-roll</b> </p>
                     <a href="https://github.com/JonasSMendes/react.js" >mais informaçoes</a>  
                 </div>
             </div>
@@ -72,3 +69,5 @@ export default () =>{
         </Body>
     )
 }
+
+export default forwardRef(MainSobre);

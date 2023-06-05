@@ -7,6 +7,7 @@ export const Body = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    
 `;
 
 export const Container = styled.div`
@@ -45,7 +46,7 @@ export const Container = styled.div`
         }
 
         .content{
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             transform: translatey(100px);
             opacity: 0;
