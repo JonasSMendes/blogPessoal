@@ -4,7 +4,6 @@ export const Container = styled.div`
     display: flex;
     height: 100vh;
     flex-direction: column; 
-    ;
     
 `;
 
@@ -75,6 +74,7 @@ export const HeaderArea = styled.div`
                     font-size: 20px;
                     font-family: Arial, Helvetica, sans-serif;
                     transition: all 0.1s ease-out;
+                    cursor: pointer;
                     
 
                     &:hover{

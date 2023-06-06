@@ -4,10 +4,10 @@ import {DiJavascript1, DiHtml5, DiCss3, DiReact, DiPhp, DiJava} from 'react-icon
 import { forwardRef } from "react";
 
 
-function MainSobre () {
+export default () => {
 
     return(
-        <Body >
+        <Body id="sobre">
         <Container>
             <div className="card">
                 <span><DiJavascript1/></span>
@@ -70,4 +70,3 @@ function MainSobre () {
     )
 }
 
-export default forwardRef(MainSobre);

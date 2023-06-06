@@ -1,26 +1,19 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 
-import { Container, Menu, PageBody,Footer,HeaderArea } from './appstyled';
+import { Link } from 'react-scroll';
+
+import { Container, Menu, PageBody,HeaderArea } from './appstyled';
 
 
 import HomeScreen from './pages/HomeScreen';
 import MainSobre from './pages/MainSobre';
 import TelaProjetos from './pages/TelaProjetos'
+import Contato from './pages/Contato';
 
+import BackToTopButton from './components/ButtonTop/BackToTopButton'
 
 export default () => {
-
-    let ref = useRef(null);
-
-    const HomeClick = () =>{
-        ref.current.scrollIntoView({behavior:'smooth'});
-    }
-
-    const SobreClick = () =>{
-        ref.current.scrollIntoView({behavior:'smooth'})
-    }
-
 
     return (
         <BrowserRouter>
@@ -37,9 +30,18 @@ export default () => {
                 <div>
                     <nav>
                         <ul>
-                           <li onClick={HomeClick}> Home </li> 
-                           <li onClick={SobreClick}> Sobre </li>
-                           <li> Projetos </li>
+                            <li>
+                                <Link to='home' smooth={true} offset={100} duration={500}>home</Link>
+                            </li>
+                            <li>
+                                <Link to='sobre' smooth={true} offset={100} duration={500}>sobre</Link>
+                            </li>
+                            <li>
+                                <Link to='projetos' smooth={true} offset={100} duration={500}>projetos</Link>
+                            </li>
+                            <li>
+                                <Link to='contato' smooth={true} offset={100} duration={500}>contato</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -47,14 +49,17 @@ export default () => {
                 </div>
                 </HeaderArea>
                 </Menu>
-                <PageBody>
-                            <HomeScreen ref={ref} />
-                            <MainSobre ref={ref} />                       
-                            <TelaProjetos />        
+                <PageBody>  
+                        <HomeScreen />
+                        <MainSobre />                       
+                        <TelaProjetos /> 
+                        <Contato/>    
                 </PageBody> 
     
             </Container>
-                
+
+            <BackToTopButton/>
+
         </BrowserRouter>
     );
 }

@@ -4,14 +4,13 @@ import { Container } from './styled';
 
 import Scream from '../../components/Scream';
 
-function HomeScreen (ref) {
+export default () => {
     const history = useHistory();
 
     return (
-        <Container ref={ref}>
-            <Scream id='home'/>
+        <Container id='home' >
+            <Scream />
         </Container>
     );
 }
 
-export default forwardRef(HomeScreen);
