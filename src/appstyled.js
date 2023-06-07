@@ -93,7 +93,7 @@ export const HeaderArea = styled.div`
 `;
 
 export const PageBody = styled.div`
-    background: linear-gradient(0deg, rgba(57,57,57,1) 16%, rgba(228,174,22,0.06486344537815125) 78%);
+    background-color: #161623;
     display: flex;
     flex-direction: column;
     justify-content: center;
