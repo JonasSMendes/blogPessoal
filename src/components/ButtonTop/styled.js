@@ -6,7 +6,7 @@ export const ButtonUpToTop = styled.div`
     right: 50px;
     height: 50px;
     width: 50px;
-    font-size: 30px;
+    font-size: 25px;
 
 
     appearance: none;
