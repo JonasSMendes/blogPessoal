@@ -7,6 +7,32 @@ export const Body = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    flex-direction: column;
+    width: 1000px;
+
+
+    .sobre-infos{
+
+        text-align: center;
+
+        h1{
+            font-size: 70px;
+            color: #9373ec;
+            margin-bottom: 20px;
+
+        }
+
+        p{
+            color: #c6c9d8bf;
+            letter-spacing: 1px;
+            line-height: 26px;
+            font-size: 1.1rem;
+            margin-bottom: 1.8rem;
+            margin-top: 2.8rem;
+            text-align: center;
+            font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+        }
+    }
     
 `;
 
@@ -33,7 +59,7 @@ export const Container = styled.div`
         align-items: center;
         border-top: 1px solid rgba(255,255,255,0.5);
         border-left: 1px solid rgba(255,255,255,0.5);
-        
+        cursor: pointer;
 
         span{ 
             position: absolute;
@@ -68,6 +94,7 @@ export const Container = styled.div`
                 font-size: 1em;
                 color: #fff;
                 font-weight: 300;
+                font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
             }
 
             a{

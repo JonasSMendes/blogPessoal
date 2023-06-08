@@ -8,6 +8,14 @@ export default () => {
 
     return(
         <Body id="sobre">
+
+        <div className="sobre-infos">
+            <h1>Habilidades</h1>
+            <p>Estudo programação desde 2018,em paralelo a isso, estudava biologia, mas tranquei o curso para focar todo meu tempo ao desenvolvimento web,sou apaixonado por inovação e me desafiar.
+                os cursos na escola de programção b7web, muita curiosidade, fome de aprender e produzir, me ajudaram a desenvolver conhecimento na area,acredito que estou pronto para atender o mercado atual,e ir para uma proxima etapa na minha carreira.
+            </p>
+        </div>
+
         <Container>
             <div className="card">
                 <span><DiJavascript1/></span>

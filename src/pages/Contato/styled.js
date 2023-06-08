@@ -38,7 +38,7 @@ export const Body = styled.div`
                 margin-bottom: 20px;
 
                 span{
-                    color: #f9004d;
+                    color: #9373ec;
                 }
             }
 
@@ -72,7 +72,7 @@ export const Body = styled.div`
 
                     .btn{
                         display: inline-block;
-                        background: #f9004d;
+                        background: #9373ec;
                         font-size: 1.1rem;
                         letter-spacing: 1px;
                         text-transform: uppercase;
@@ -84,7 +84,7 @@ export const Body = styled.div`
                         cursor: pointer;
 
                         &:hover{
-                            border: 2px solid #f9004d;
+                            border: 2px solid #9373ec;
                             background: transparent;
                             transform: scale(1.1);
                         }
@@ -107,11 +107,11 @@ export const Body = styled.div`
         }
     }
 
-   /* @media(max-width: 1570px){
+   /* @media(max-width: 750px){
         section{
-            padding: 80px 3%;
-            transition: .2s;
         }
+
+        
     } 
 */
 `;
