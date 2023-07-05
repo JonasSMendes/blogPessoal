@@ -25,7 +25,7 @@ export  default () =>{
             <div className="main-home">
             <div className="text-profile">
                 <div className="texte-home">
-                <h1 ref={titulo} >oi,eu sou JonasSmendes desenvolvedor Frontend</h1>
+                <h1 ref={titulo} >oi,eu sou JonasSmendes desenvolvedor</h1>
                 </div>
                 <div className="icon-redes">
                    <a href='https://github.com/JonasSMendes' > <img src='/assets/github.png'/> </a>

@@ -31,16 +31,16 @@ export default () => {
                     <nav>
                         <ul>
                             <li>
-                                <Link to='home' smooth={true} offset={50} duration={500}>home</Link>
+                                <Link to='home' smooth={true} offset={50} duration={500}>Home</Link>
                             </li>
                             <li>
-                                <Link to='sobre' smooth={true} offset={50} duration={500}>sobre</Link>
+                                <Link to='sobre' smooth={true} offset={50} duration={500}>Sobre</Link>
                             </li>
                             <li>
-                                <Link to='projetos' smooth={true} offset={50} duration={500}>projetos</Link>
+                                <Link to='projetos' smooth={true} offset={50} duration={500}>Projetos</Link>
                             </li>
                             <li>
-                                <Link to='contato' smooth={true} offset={50} duration={500}>contato</Link>
+                                <Link to='contato' smooth={true} offset={50} duration={500}>Contato</Link>
                             </li>
                         </ul>
                     </nav>
